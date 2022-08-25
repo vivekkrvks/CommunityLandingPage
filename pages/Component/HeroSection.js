@@ -24,7 +24,7 @@ function HeroSection() {
             </a> 
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://pensil-community-landing-page.netlify.app/assets/images/hero-1.jpg" alt="mockup" />
+            <img src="https://codercommunity.io/assets/laptop2.png" alt="mockup" />
         </div>                
     </div>
 </section>

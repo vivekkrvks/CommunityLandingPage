@@ -3,14 +3,14 @@ import { useTheme } from 'next-themes'
 import Image from "next/image";
 import { useRouter } from 'next/router'
 
-function TeamSection() {
+function FaqComponent() {
   const {theme,setTheme} = useTheme()
   const router = useRouter();
 
 
 
     return(
-        <div class="container my-24 px-6 mx-auto">
+        <div class="container my-2 px-6 mx-auto">
         
           <section class="mb-32 text-gray-800">
             <div class="grid md:grid-cols-2 gap-4">
@@ -26,28 +26,17 @@ function TeamSection() {
               </div>
         
               <div class="mb-6 md:mb-0">
-                <p class="font-bold mb-4">Anim pariatur cliche reprehenderit?</p>
+          {faqData.map((v,i) => (
+            <>
+<p class="font-bold mb-4">{v.question}</p>
                 <p class="text-gray-500 mb-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt autem numquam dolore
-                  molestias aperiam culpa alias veritatis architecto eos, molestiae vitae ex eligendi
-                  libero eveniet dolorem, doloremque rem aliquid perferendis.
+                 ({v.solution}
                 </p>
+            </>
+          ))}
+                
         
-                <p class="font-bold mb-4">Non cupidatat skateboard dolor brunch?</p>
-                <p class="text-gray-500 mb-12">
-                  Distinctio corporis, iure facere ducimus quos consectetur ipsa ut magnam autem
-                  doloremque ex! Id, sequi. Voluptatum magnam sed fugit iusto minus et suscipit? Minima
-                  sunt at nulla tenetur, numquam unde quod modi magnam ab deserunt ipsam sint aliquid
-                  dolores libero repellendus cupiditate mollitia quidem dolorem odit
-                </p>
-        
-                <p class="font-bold mb-4">
-                  Praesentium voluptatibus temporibus consequatur non aspernatur?
-                </p>
-                <p class="text-gray-500 mb-12">
-                  Minima sunt at nulla tenetur, numquam unde quod modi magnam ab deserunt ipsam sint
-                  aliquid dolores libero repellendus cupiditate mollitia quidem dolorem.
-                </p>
+              
               </div>
             </div>
           </section>
@@ -57,4 +46,24 @@ function TeamSection() {
 )
 }
 
-export default TeamSection;
+export default FaqComponent;
+
+let faqData = [
+{
+  question:"Can i get solution from my code ?",
+  solution:"Post your quesries into the desired group and get instant support from developers"
+},
+{
+  question:"Can i learn from anywhere ?",
+  solution:"No matter from where you are learning from ? If yout get stuck in your code, come here and get resolved."
+},
+{
+  question:"Can i get Answers From Community ?",
+  solution:"Get answers quickly from your desired community, like JAVASCRIPT Community, etc"
+},
+{
+  question:"Is there Mobile Application available ?",
+  solution:"Get Notifications quickly on mobile app available on Google Play Store, Apple Store"
+},
+
+]

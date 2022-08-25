@@ -12,7 +12,7 @@ function Header({isHomePage}) {
 
     return(
         
-<nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded  dark:bg-blue-900 light:bg-white">
+<nav class=" border-blue-600 px-2 sm:px-4 py-2.5 rounded ">
   <div class="container flex flex-wrap justify-between items-center mx-auto">
   <a href="https://flowbite.com/" class="flex items-center">
       <img src="https://pensil-social.s3.ap-south-1.amazonaws.com/storage/community-logos/3c07bf92-9cd7-4eb6-91ba-7e1509f7cc44.webp" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/>

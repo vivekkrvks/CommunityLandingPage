@@ -85,13 +85,19 @@ export default TeamSection;
 
 const TeamData = [
   {
-    name:"Vivek",Image:"https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg",position:"CEO",facebook:"",instagram:"",twitter:""
+    name:"Anurag Sharma",
+    Image:"https://pensil-community-landing-page.netlify.app/assets/images/user_1.png",
+    position:"Senior Data Engineer, HP INC",facebook:"",instagram:"",twitter:""
   },
   {
-    name:"Raman",Image:"https://mdbootstrap.com/img/new/avatars/12.jpg",position:"CEO",facebook:"",instagram:"",twitter:""
+    name:"Rohan Kamble",
+    Image:"https://pensil-community-landing-page.netlify.app/assets/images/user_2.png",
+    position:"Data Analyst,",facebook:"",instagram:"",twitter:""
   },
   {
-    name:"Shyam",Image:"https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg",position:"CEO",facebook:"",instagram:"",twitter:""
+    name:"Ankit Sharma",
+    Image:"https://pensil-community-landing-page.netlify.app/assets/images/user_4.png",
+    position:"Analyst(Data Science), Tiger Analytics",facebook:"",instagram:"",twitter:""
   },
 
 ]
